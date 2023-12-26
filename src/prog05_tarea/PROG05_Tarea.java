@@ -37,10 +37,20 @@ public class PROG05_Tarea {
                     Barco nave=new Barco();
                     break;
                 case 2:
-                    
+                    //comprobamos matrícula. If comprueba si "nave" existe o no
+                    if(nave != null){
+                        nave.getMatricula();
+                    }else{
+                        System.out.println("No se ha introducido ningún barco.");
+                    }
                     break;
                 case 3:
-
+                    if(nave != null){
+                        nave.getMatricula();
+                    }else{
+                        System.out.println("No se ha introducido ningún barco.");
+                    }
+                    break;
                     break;
                 case 4:
 
