@@ -1,7 +1,7 @@
 package prog05_tarea;
 
-import java.security.DrbgParameters;
-import java.util.Scanner;
+import java.time;
+import java.time.LocalDate;
 
 public class PROG05_Tarea {
 
@@ -28,40 +28,40 @@ public class PROG05_Tarea {
         // variable opcion para usar en el switch
         //if para comprobar que el número del usuario está entre 1-9
         
-        
         byte opcion=lectura.nextByte();
         
         if (opcion>0 && opcion<10) {
             switch (opcion) {
-            case 1:
-                
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                
-                break;
-            case 4:
-                
-                break;
-            case 5:
-                
-                break;
-            case 6:
-                
-                break;
-            case 7:
-                
-                break;
-            case 8:
-                
-                break;
-            case 9:
-                
-                break;
-            default:
-                throw new AssertionError();
+                case 1:
+                    //instanciamos objeto barco (constructor vacío)
+                    Barco nave=new Barco();
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+                case 6:
+
+                    break;
+                case 7:
+
+                    break;
+                case 8:
+
+                    break;
+                case 9:
+
+                    break;
+                default:
+                    throw new AssertionError();
             }
         }else{
             System.out.println("Introduzca un número entre 1 y 9");
