@@ -1,6 +1,6 @@
 package prog05_tarea;
 
-import java.time.LocalDate;
+import java.time.*;
 
 public class Barco {
     
@@ -100,10 +100,7 @@ public class Barco {
     // Métodos
     
     public getAnios(){
-        int Anios;
-        LocalDate fechaActual=LocalDate.now();
-        int anioActual=fechaActual.now().getYear();
-        Anios=anioActual    
+        Period periodo=Period.between(this.getFechaMatriculacion(), LocalDate.MAX);
                 
         return Anios;    
     }
